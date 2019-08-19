@@ -1,0 +1,39 @@
+#! /usr/bin/env ruby
+# frozen_string_literal: true
+# -*- ruby -*-
+
+require "concurrent"  # SPDX-License-Identifier: MIT
+require "octokit"     # SPDX-License-Identifier: MIT
+require "tty-spinner" # SPDX-License-Identifier: MIT
+require "tty-table"   # SPDX-License-Identifier: MIT
+require_relative "../lib/concourse-objects"
+require_relative "../lib/concourse-objects/resources"
+
+SPINNER_FORMAT = ENV.fetch("SPINNER_FORMAT") { :arrow_pulse }.to_sym
+
+WhileSpinning = lambda do |message, report: nil, padding: 0, &block|
+  Concurrent::IVar.new.tap do |ivar|
+    TTY::Spinner.new("[:spinner] #{message}", format: SPINNER_FORMAT).tap do |spinner|
+      spinner.auto_spin
+      ivar.set block.call
+      padding = (' ' * [(padding - message.length), 0].max)
+      ivar.value ? (report ? spinner.success(padding + ivar.value.public_send(report).to_s) : spinner.success) : spinner.error
+    end
+  end.value
+end
+
+TTY::Table.new(header: ["name", "repository", "expected", "actual"]).yield_self do |results|
+  Octokit::Client.new(access_token: ENV["GITHUB_ACCESS_TOKEN"], auto_paginate: true).yield_self do |github|
+    ConcourseObjects::Resources.resources.sort_by { |resource| resource::GITHUB_REPOSITORY }.each do |resource|
+      WhileSpinning.("#{resource::RESOURCE_NAME} (#{resource::GITHUB_REPOSITORY})") do
+        github.latest_release(resource::GITHUB_REPOSITORY).name.yield_self do |version|
+          results << [resource::RESOURCE_NAME, resource::GITHUB_REPOSITORY, resource::GITHUB_VERSION, version]
+
+          resource::GITHUB_VERSION == version
+        end
+      end
+    end
+  end
+
+  STDOUT.puts results.render(:unicode, padding: [0, 1])
+end
