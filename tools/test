@@ -1,0 +1,72 @@
+#! /usr/bin/env ruby
+# frozen_string_literal: true
+# -*- ruby -*-
+
+require "pry" # SPDX-License-Identifier: MIT
+require_relative "../lib/concourse-objects"
+require_relative "../lib/concourse-objects/resources"
+
+Files = lambda do |path|
+  Pathname(path).children.flat_map do |child|
+    child.directory? ? Files.(child) : child
+  end.select(&:file?).uniq
+end
+
+SortHash = lambda do |hash|
+  hash.sort.to_h.transform_values do |value|
+    case value
+    when Hash then SortHash.(value)
+    when Array then value.all? { |v| v.is_a?(Hash) } ? value.map(&SortHash) : value
+    else value
+    end
+  end
+end
+
+sampledir = Pathname("concourse-pipeline-samples").expand_path
+
+samples = if sampledir.exist?
+  (Files
+    .(sampledir)
+    .select { |file| file.extname == ".yml" }
+    .reject { |file| file.to_s.match? /deprecated/ }
+    .reject { |file| file.basename.to_s.match? /params/ }
+    .map    { |file| [file.relative_path_from(sampledir.dirname), YAML.load(file.read)] }
+    .to_h)
+else
+  {}
+end
+
+reference_pipelines = samples.select do |_, content|
+  ["jobs", "resources", "resource_types", "groups"].any? do |key|
+    content.keys.include?(key)
+  end
+end
+
+reference_tasks = samples.select do |_, content|
+  ["platform", "run"].any? do |key|
+    content.keys.include?(key)
+  end
+end
+
+misc = [samples, reference_pipelines, reference_tasks].map(&:to_a).reduce(:-)
+
+# reference_pipelines.map { |k, v| k.write(YAML.dump(SortHash.(v))) }
+# reference_tasks.map { |k, v| k.write(YAML.dump(SortHash.(v))) }
+
+reference_pipelines.each { |k, v| k.write(ConcourseObjects::Pipeline.(v).to_yaml) }
+# reference_tasks.each     { |k, v| k.write(ConcourseObjects::Task.(v).to_yaml) }
+
+parsed_pipelines = reference_pipelines.map { |k, v| puts "Parsing #{k} ..."; [k, ConcourseObjects::Pipeline.(v)] }.to_h
+parsed_tasks     = reference_tasks.map     { |k, v| puts "Parsing #{k} ..."; [k, ConcourseObjects::Task.(v)]}.to_h
+
+bad_serialization = parsed_pipelines.select { |k, v| ConcourseObjects::Pipeline.(YAML.load(v.to_yaml)).to_h != v.to_h }
+
+pipelines      = parsed_pipelines.values.uniq
+resource_types = pipelines.flat_map(&:resource_types).uniq
+resources      = pipelines.flat_map(&:resources).uniq
+groups         = pipelines.flat_map(&:groups).uniq
+jobs           = pipelines.flat_map(&:jobs).uniq
+steps          = jobs.flat_map(&:plan).uniq
+tasks          = parsed_tasks.values.uniq
+
+binding.pry
