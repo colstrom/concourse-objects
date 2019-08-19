@@ -1,0 +1,41 @@
+#+TITLE: concourse-objects - Objects for Concourse
+#+LATEX: \pagebreak
+
+* Overview
+
+  ~concourse-objects~ is a library for interacting with Concourse-related
+  concepts as Objects. It can parse and generate things like pipelines and task
+  definitions, and is intended to be intuitive to use and simple to extend.
+
+* Why does this exist?
+
+  To support building more interesting tools for Concourse, like pipeline
+  generators, linters, etc.
+
+* Installation
+
+  #+BEGIN_SRC shell
+    gem install concourse-objects
+  #+END_SRC
+
+* Usage
+
+  #+BEGIN_SRC ruby
+    require "concourse-objects"           # the main library
+    require "concourse-objects/resources" # (optional) supplementary library with resource-specific classes (including all official resource types)
+  #+END_SRC
+
+* What's in the box?
+
+  - A collection of classes related to Concourse Pipelines, Tasks, and Resources (and more).
+  - Some tools for maintaining this library, including:
+    - A testing utility that parses a tree of samples and rewrites them. The results are intended to be inspected with =git diff=.
+    - A utility that checks for newer versions for resources, for human review.
+
+* License
+
+  ~concourse-objects~ is available under the [[https://tldrlegal.com/license/mit-license][MIT License]]. See ~LICENSE.txt~ for the full text.
+
+* Contributors
+
+  - [[https://colstrom.github.io/][Chris Olstrom]] | [[mailto:chris@olstrom.com][e-mail]] | [[https://twitter.com/ChrisOlstrom][Twitter]]
