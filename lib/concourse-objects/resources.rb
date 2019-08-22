@@ -25,6 +25,7 @@ require_relative "resources/hipchat-notification"
 require_relative "resources/irc-notification"
 require_relative "resources/keyval"
 require_relative "resources/metadata"
+require_relative "resources/mock"
 module ConcourseObjects
   module Resources
     def self.resources
