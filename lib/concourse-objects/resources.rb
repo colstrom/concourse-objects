@@ -15,6 +15,7 @@ require_relative "resources/time"
 
 require_relative "resources/concourse-pipeline"
 require_relative "resources/email"
+require_relative "resources/github-list-repos"
 module ConcourseObjects
   module Resources
     def self.resources
