@@ -10,6 +10,7 @@ require_relative "resources/hg"
 require_relative "resources/pool"
 require_relative "resources/registry-image"
 require_relative "resources/s3"
+require_relative "resources/semver"
 require_relative "resources/time"
 
 module ConcourseObjects
