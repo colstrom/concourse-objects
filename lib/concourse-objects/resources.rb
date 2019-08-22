@@ -18,6 +18,7 @@ require_relative "resources/email"
 require_relative "resources/github-list-repos"
 require_relative "resources/github-pr"
 require_relative "resources/github-webhook"
+require_relative "resources/grafana"
 module ConcourseObjects
   module Resources
     def self.resources
