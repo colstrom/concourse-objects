@@ -14,6 +14,7 @@ require_relative "resources/semver"
 require_relative "resources/time"
 
 require_relative "resources/ansible-playbook"
+require_relative "resources/artifactory"
 require_relative "resources/concourse-pipeline"
 require_relative "resources/email"
 require_relative "resources/github-list-repos"
