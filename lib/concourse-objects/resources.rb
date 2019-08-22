@@ -20,6 +20,7 @@ require_relative "resources/github-pr"
 require_relative "resources/github-webhook"
 require_relative "resources/grafana"
 require_relative "resources/helm"
+require_relative "resources/helm-chart"
 module ConcourseObjects
   module Resources
     def self.resources
