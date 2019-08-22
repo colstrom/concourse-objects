@@ -26,6 +26,7 @@ require_relative "resources/irc-notification"
 require_relative "resources/keyval"
 require_relative "resources/metadata"
 require_relative "resources/mock"
+require_relative "resources/rss"
 module ConcourseObjects
   module Resources
     def self.resources
