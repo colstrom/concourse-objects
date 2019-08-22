@@ -13,6 +13,7 @@ require_relative "resources/s3"
 require_relative "resources/semver"
 require_relative "resources/time"
 
+require_relative "resources/concourse-pipeline"
 module ConcourseObjects
   module Resources
     def self.resources
