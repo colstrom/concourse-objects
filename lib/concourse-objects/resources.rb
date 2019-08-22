@@ -24,6 +24,7 @@ require_relative "resources/helm-chart"
 require_relative "resources/hipchat-notification"
 require_relative "resources/irc-notification"
 require_relative "resources/keyval"
+require_relative "resources/metadata"
 module ConcourseObjects
   module Resources
     def self.resources
