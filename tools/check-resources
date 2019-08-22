@@ -26,7 +26,7 @@ TTY::Table.new(header: ["name", "repository", "expected", "actual"]).yield_self 
   Octokit::Client.new(access_token: ENV["GITHUB_ACCESS_TOKEN"], auto_paginate: true).yield_self do |github|
     ConcourseObjects::Resources.resources.sort_by { |resource| resource::GITHUB_REPOSITORY }.each do |resource|
       WhileSpinning.("#{resource::RESOURCE_NAME} (#{resource::GITHUB_REPOSITORY})") do
-        github.latest_release(resource::GITHUB_REPOSITORY).name.yield_self do |version|
+        github.latest_release(resource::GITHUB_REPOSITORY).tag_name.yield_self do |version|
           results << [resource::RESOURCE_NAME, resource::GITHUB_REPOSITORY, resource::GITHUB_VERSION, version]
 
           resource::GITHUB_VERSION == version
