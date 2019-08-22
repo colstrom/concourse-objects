@@ -28,6 +28,8 @@ require_relative "resources/metadata"
 require_relative "resources/mock"
 require_relative "resources/rss"
 require_relative "resources/rubygems"
+require_relative "resources/slack-notification"
+
 module ConcourseObjects
   module Resources
     def self.resources
