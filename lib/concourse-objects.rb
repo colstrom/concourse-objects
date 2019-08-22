@@ -35,7 +35,7 @@ module ConcourseObjects
 
     Nothing    = proc { nil }
     EmptyArray = proc { []  }
-    EmptyHash  = proc { []  }
+    EmptyHash  = proc { {}  }
 
     def hash
       self.to_h.hash
