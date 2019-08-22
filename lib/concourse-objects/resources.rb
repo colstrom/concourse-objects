@@ -21,6 +21,7 @@ require_relative "resources/github-webhook"
 require_relative "resources/grafana"
 require_relative "resources/helm"
 require_relative "resources/helm-chart"
+require_relative "resources/hipchat-notification"
 module ConcourseObjects
   module Resources
     def self.resources
