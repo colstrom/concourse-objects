@@ -65,7 +65,9 @@ module ConcourseObjects
     def self.owners
       resources.group_by do |resource|
         resource.const_get(:GITHUB_OWNER) if resource.const_defined?(:GITHUB_OWNER)
-      end
+      end.sort_by do |key, value|
+        value.count
+      end.reverse.to_h
     end
 
     def self.owned_by(owner)
