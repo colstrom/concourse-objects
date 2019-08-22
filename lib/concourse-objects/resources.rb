@@ -14,6 +14,7 @@ require_relative "resources/semver"
 require_relative "resources/time"
 
 require_relative "resources/concourse-pipeline"
+require_relative "resources/email"
 module ConcourseObjects
   module Resources
     def self.resources
