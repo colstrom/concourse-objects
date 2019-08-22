@@ -27,6 +27,7 @@ require_relative "resources/keyval"
 require_relative "resources/metadata"
 require_relative "resources/mock"
 require_relative "resources/rss"
+require_relative "resources/rubygems"
 module ConcourseObjects
   module Resources
     def self.resources
