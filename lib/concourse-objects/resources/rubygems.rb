@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class RubyGems < Resource
       RESOURCE_NAME     = "rubygems"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "troykinsella"
       GITHUB_REPOSITORY = "troykinsella/concourse-rubygems-resource"
       GITHUB_VERSION    = "1.0.0"

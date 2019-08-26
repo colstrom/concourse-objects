@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Hangouts < Resource
       RESOURCE_NAME     = "hangouts"
+      RESOURCE_LICENSE  = "BSD-2-Clause"
       GITHUB_OWNER      = "CloudInn"
       GITHUB_REPOSITORY = "CloudInn/concourse-hangouts-resource"
       GITHUB_VERSION    = "v0.3.2-rc.7"

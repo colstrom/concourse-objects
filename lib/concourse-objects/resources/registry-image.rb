@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class RegistryImage < Resource
       RESOURCE_NAME     = "registry-image"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/registry-image-resource"
       GITHUB_VERSION    = "v0.6.1"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class HipChatNotification < Resource
       RESOURCE_NAME     = "hipchat-notification"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "cloudfoundry-community"
       GITHUB_REPOSITORY = "cloudfoundry-community/hipchat-notification-resource"
       GITHUB_VERSION    = "v0.0.4"

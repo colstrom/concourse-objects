@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class DockerImage < Resource
       RESOURCE_NAME     = "docker-image"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/docker-image-resource"
       GITHUB_VERSION    = "v1.3.1"

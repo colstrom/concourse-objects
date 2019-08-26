@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Time < Resource
       RESOURCE_NAME     = "time"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/time-resource"
       GITHUB_VERSION    = "v1.2.1"

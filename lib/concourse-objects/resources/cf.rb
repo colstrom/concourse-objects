@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class CF < Resource
       RESOURCE_NAME     = "cf"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/cf-resource"
       GITHUB_VERSION    = "v1.1.0"

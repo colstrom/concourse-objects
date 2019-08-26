@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GCS < Resource
       RESOURCE_NAME     = "gcs"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "frodenas"
       GITHUB_REPOSITORY = "frodenas/gcs-resource"
       GITHUB_VERSION    = "v0.5.1"

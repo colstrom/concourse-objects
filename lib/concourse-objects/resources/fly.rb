@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Fly < Resource
       RESOURCE_NAME     = "fly"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "troykinsella"
       GITHUB_REPOSITORY = "troykinsella/concourse-fly-resource"
       GITHUB_VERSION    = "v1.0.0"

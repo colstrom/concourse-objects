@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GitHubListRepos < Resource
       RESOURCE_NAME     = "github-list-repos"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "coralogix"
       GITHUB_REPOSITORY = "coralogix/eng-concourse-github-list-repos-resource"
       GITHUB_VERSION    = "v0.3.1"

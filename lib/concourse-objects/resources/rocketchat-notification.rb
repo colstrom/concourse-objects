@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class RocketChatNotification < Resource
       RESOURCE_NAME     = "rocketchat-notification"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "michaellihs"
       GITHUB_REPOSITORY = "michaellihs/rocketchat-notification-resource"
       GITHUB_VERSION    = "1.0.3"

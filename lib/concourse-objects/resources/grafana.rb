@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Grafana < Resource
       RESOURCE_NAME     = "grafana"
+      RESOURCE_LICENSE  = nil
       GITHUB_OWNER      = "telia-oss"
       GITHUB_REPOSITORY = "telia-oss/grafana-resource"
       GITHUB_VERSION    = "v0.0.2"

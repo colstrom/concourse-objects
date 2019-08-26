@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class DeployGate < Resource
       RESOURCE_NAME     = "deploygate"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "YuukiARIA"
       GITHUB_REPOSITORY = "YuukiARIA/concourse-deploygate-resource"
       GITHUB_VERSION    = "v0.2.1"

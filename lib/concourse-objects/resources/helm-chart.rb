@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class HelmChart < Resource
       RESOURCE_NAME     = "helm-chart"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "linkyard"
       GITHUB_REPOSITORY = "linkyard/helm-chart-resource"
       GITHUB_VERSION    = "v0.1.0"

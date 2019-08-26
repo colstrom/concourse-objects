@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class ConcoursePipeline < Resource
       RESOURCE_NAME     = "concourse-pipeline"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/concourse-pipeline-resource"
       GITHUB_VERSION    = "v2.2.0"

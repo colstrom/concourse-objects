@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class AlertManager < Resource
       RESOURCE_NAME     = "alertmanager"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "frodenas"
       GITHUB_REPOSITORY = "frodenas/alertmanager-resource"
       GITHUB_VERSION    = "v0.3.0"

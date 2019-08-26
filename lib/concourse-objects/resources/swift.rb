@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Swift < Resource
       RESOURCE_NAME     = "swift"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "sapcc"
       GITHUB_REPOSITORY = "sapcc/swift-resource"
       GITHUB_VERSION    = "v1.3.0"

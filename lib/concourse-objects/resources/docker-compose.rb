@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class DockerCompose < Resource
       RESOURCE_NAME     = "docker-compose"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "troykinsella"
       GITHUB_REPOSITORY = "troykinsella/concourse-docker-compose-resource"
       GITHUB_VERSION    = "1.1.0"

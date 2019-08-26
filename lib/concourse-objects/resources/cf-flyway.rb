@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Flyway < Resource
       RESOURCE_NAME     = "cf-flyway"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "emerald-resource"
       GITHUB_REPOSITORY = "emerald-resource/cf-flyway-resource"
       GITHUB_VERSION    = "v1.0.1"

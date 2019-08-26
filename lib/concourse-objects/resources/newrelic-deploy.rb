@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class NewRelicDeploy < Resource
       RESOURCE_NAME     = "newrelic-deploy"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "homedepot"
       GITHUB_REPOSITORY = "homedepot/newrelic-deploy-resource"
       GITHUB_VERSION    = "v1.0"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class ServerSpec < Resource
       RESOURCE_NAME     = "serverspec"
+      RESOURCE_LICENSE  = nil
       GITHUB_OWNER      = "opicaud"
       GITHUB_REPOSITORY = "opicaud/serverspec-resource"
       GITHUB_VERSION    = "0.0.2"

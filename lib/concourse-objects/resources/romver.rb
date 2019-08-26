@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class RomVer < Resource
       RESOURCE_NAME     = "romver"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "cappyzawa"
       GITHUB_REPOSITORY = "cappyzawa/romver-resource"
       GITHUB_VERSION    = "v0.0.10"

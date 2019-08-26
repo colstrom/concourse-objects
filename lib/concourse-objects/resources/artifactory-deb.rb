@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class ArtifactoryDeb < Resource
       RESOURCE_NAME     = "artifactory-deb"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "troykinsella"
       GITHUB_REPOSITORY = "troykinsella/concourse-artifactory-deb-resource"
       GITHUB_VERSION    = "1.0.0"

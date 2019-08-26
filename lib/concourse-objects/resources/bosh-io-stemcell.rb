@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class BoshIOStemcell < Resource
       RESOURCE_NAME     = "bosh-io-stemcell"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/bosh-io-stemcell-resource"
       GITHUB_VERSION    = "v1.0.3"

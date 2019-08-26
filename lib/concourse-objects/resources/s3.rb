@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class S3 < Resource
       RESOURCE_NAME     = "s3"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/s3-resource"
       GITHUB_VERSION    = "v1.0.3"

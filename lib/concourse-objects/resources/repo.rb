@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Repo < Resource
       RESOURCE_NAME     = "repo"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "google"
       GITHUB_REPOSITORY = "google/concourse-resources"
       GITHUB_VERSION    = "0.2.2"

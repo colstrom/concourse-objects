@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class BoshIORelease < Resource
       RESOURCE_NAME     = "bosh-io-release"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/bosh-io-release-resource"
       GITHUB_VERSION    = "v1.0.2"

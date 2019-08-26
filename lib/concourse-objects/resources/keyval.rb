@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class KeyVal < Resource
       RESOURCE_NAME     = "keyval"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "SWCE"
       GITHUB_REPOSITORY = "SWCE/keyval-resource"
       GITHUB_VERSION    = "1.0.6"

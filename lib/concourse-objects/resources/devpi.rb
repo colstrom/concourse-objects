@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class DevPI < Resource
       RESOURCE_NAME     = "devpi"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "mdomke"
       GITHUB_REPOSITORY = "mdomke/devpi-resource"
       GITHUB_VERSION    = "1.1.1"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class CFZeroDowntime < Resource
       RESOURCE_NAME     = "cf-zero-downtime"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "emerald-squad"
       GITHUB_REPOSITORY = "emerald-squad/cf-zero-downtime-resource"
       GITHUB_VERSION    = "0.1.0"

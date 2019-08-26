@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class RSS < Resource
       RESOURCE_NAME     = "rss"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "suhlig"
       GITHUB_REPOSITORY = "suhlig/concourse-rss-resource"
       GITHUB_VERSION    = "v1.0"

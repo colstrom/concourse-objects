@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GitHubRelease < Resource
       RESOURCE_NAME     = "github-release"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/github-release-resource"
       GITHUB_VERSION    = "v1.1.1"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Marathon < Resource
       RESOURCE_NAME     = "marathon"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "ckaznocha"
       GITHUB_REPOSITORY = "ckaznocha/marathon-resource"
       GITHUB_VERSION    = "0.4.0"

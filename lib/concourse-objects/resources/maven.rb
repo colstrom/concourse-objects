@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Maven < Resource
       RESOURCE_NAME     = "maven"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "nulldriver"
       GITHUB_REPOSITORY = "nulldriver/maven-resource"
       GITHUB_VERSION    = "v1.3.6"

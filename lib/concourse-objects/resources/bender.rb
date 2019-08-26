@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Bender < Resource
       RESOURCE_NAME     = "bender"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "ahelal"
       GITHUB_REPOSITORY = "ahelal/bender"
       GITHUB_VERSION    = "v0.0.10"

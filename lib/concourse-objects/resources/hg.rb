@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Hg < Resource
       RESOURCE_NAME     = "hg"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/hg-resource"
       GITHUB_VERSION    = "v1.0.2"

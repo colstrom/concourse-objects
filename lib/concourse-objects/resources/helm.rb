@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Helm < Resource
       RESOURCE_NAME     = "helm"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "linkyard"
       GITHUB_REPOSITORY = "linkyard/concourse-helm-resource"
       GITHUB_VERSION    = "2.14.1-1"

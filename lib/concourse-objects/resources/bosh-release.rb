@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class BOSHRelease < Resource
       RESOURCE_NAME     = "bosh-release"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "dpb587"
       GITHUB_REPOSITORY = "dpb587/bosh-release-resource"
       GITHUB_VERSION    = "v0.4.0"

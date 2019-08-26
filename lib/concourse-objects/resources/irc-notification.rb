@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class IRCNotification < Resource
       RESOURCE_NAME     = "irc-notification"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "flavorjones"
       GITHUB_REPOSITORY = "flavorjones/irc-notification-resource"
       GITHUB_VERSION    = "v1.2.0"

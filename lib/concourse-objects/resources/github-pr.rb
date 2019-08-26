@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GitHubPR < Resource
       RESOURCE_NAME     = "github-pr"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "telia-oss"
       GITHUB_REPOSITORY = "telia-oss/github-pr-resource"
       GITHUB_VERSION    = "v0.18.0"

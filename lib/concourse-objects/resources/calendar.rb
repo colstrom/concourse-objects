@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Calendar < Resource
       RESOURCE_NAME     = "calendar"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "henrytk"
       GITHUB_REPOSITORY = "henrytk/calendar-resource"
       GITHUB_VERSION    = "v1.1"

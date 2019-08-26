@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class KubernetesResource < Resource
       RESOURCE_NAME     = "kubernetes"
+      RESOURCE_LICENSE  = nil
       GITHUB_OWNER      = "jcderr"
       GITHUB_REPOSITORY = "jcderr/concourse-kubernetes-resource"
       GITHUB_VERSION    = "v1.1.1"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Hockey < Resource
       RESOURCE_NAME     = "hockey"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "seadowg"
       GITHUB_REPOSITORY = "seadowg/hockey-resource"
       GITHUB_VERSION    = "0.1.0"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class SonarQube < Resource
       RESOURCE_NAME     = "sonarqube"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "cathive"
       GITHUB_REPOSITORY = "cathive/concourse-sonarqube-resource"
       GITHUB_VERSION    = "0.9.1"

@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GitHubStatus < Resource
       RESOURCE_NAME     = "github-status"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "dpb587"
       GITHUB_REPOSITORY = "dpb587/github-status-resource"
       GITHUB_VERSION    = "v2.1.0"

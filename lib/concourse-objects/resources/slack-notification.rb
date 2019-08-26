@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class SlackNotification < Resource
       RESOURCE_NAME     = "slack-notification"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "cloudfoundry-community"
       GITHUB_REPOSITORY = "cloudfoundry-community/slack-notification-resource"
       GITHUB_VERSION    = "v1.5.0"

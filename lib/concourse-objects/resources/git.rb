@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Git < Resource
       RESOURCE_NAME     = "git"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/git-resource"
       GITHUB_VERSION    = "v1.5.0"

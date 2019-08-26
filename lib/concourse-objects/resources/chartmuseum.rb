@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class ChartMuseum < Resource
       RESOURCE_NAME     = "chartmuseum"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "cathive"
       GITHUB_REPOSITORY = "cathive/concourse-chartmuseum-resource"
       GITHUB_VERSION    = "0.6.0"

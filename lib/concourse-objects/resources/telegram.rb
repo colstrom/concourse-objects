@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Telegram < Resource
       RESOURCE_NAME     = "telegram"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "carlo-colombo"
       GITHUB_REPOSITORY = "carlo-colombo/telegram-resource"
       GITHUB_VERSION    = "v0.4.0-dev.5"

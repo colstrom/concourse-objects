@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Mock < Resource
       RESOURCE_NAME     = "mock"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/mock-resource"
       GITHUB_VERSION    = "v0.6.1"

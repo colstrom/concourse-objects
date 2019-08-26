@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class AnsiblePlaybook < Resource
       RESOURCE_NAME     = "ansible-playbook"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "troykinsella"
       GITHUB_REPOSITORY = "troykinsella/concourse-ansible-playbook-resource"
       GITHUB_VERSION    = "1.0.0"

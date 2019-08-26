@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Pool < Resource
       RESOURCE_NAME     = "pool"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/pool-resource"
       GITHUB_VERSION    = "v1.0.3"

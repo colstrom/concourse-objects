@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class GitHubWebhook < Resource
       RESOURCE_NAME     = "github-webhook"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "homedepot"
       GITHUB_REPOSITORY = "homedepot/github-webhook-resource"
       GITHUB_VERSION    = "v1.1.1"

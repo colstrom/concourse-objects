@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class SemVer < Resource
       RESOURCE_NAME     = "semver"
+      RESOURCE_LICENSE  = "Apache-2.0"
       GITHUB_OWNER      = "concourse"
       GITHUB_REPOSITORY = "concourse/semver-resource"
       GITHUB_VERSION    = "v1.0.2"

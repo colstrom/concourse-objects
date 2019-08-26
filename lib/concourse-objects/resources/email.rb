@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class Email < Resource
       RESOURCE_NAME     = "email"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "pivotal-cf"
       GITHUB_REPOSITORY = "pivotal-cf/email-resource"
       GITHUB_VERSION    = "v1.0.17"

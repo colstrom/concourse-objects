@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class AndroidSDK < Resource
       RESOURCE_NAME     = "android-sdk"
+      RESOURCE_LICENSE  = "MIT"
       GITHUB_OWNER      = "xaethos"
       GITHUB_REPOSITORY = "xaethos/android-sdk-resource"
       GITHUB_VERSION    = "v0.2"

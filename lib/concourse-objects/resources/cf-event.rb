@@ -6,6 +6,7 @@ module ConcourseObjects
   module Resources
     class CFEvent < Resource
       RESOURCE_NAME     = "cf-event"
+      RESOURCE_LICENSE  = nil
       GITHUB_OWNER      = "mevansam"
       GITHUB_REPOSITORY = "mevansam/cf-event-resource-type"
       GITHUB_VERSION    = "0.9.3"
