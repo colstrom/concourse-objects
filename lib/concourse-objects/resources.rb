@@ -13,6 +13,7 @@ require_relative "resources/s3"
 require_relative "resources/semver"
 require_relative "resources/time"
 
+require_relative "resources/alertmanager"
 require_relative "resources/ansible-playbook"
 require_relative "resources/artifactory"
 require_relative "resources/artifactory-deb"
