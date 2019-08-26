@@ -36,6 +36,7 @@ module ConcourseObjects
     Nothing    = proc { nil }
     EmptyArray = proc { []  }
     EmptyHash  = proc { {}  }
+    Enum       = ->(*values) { ->(value) { value if values.include?(value) } }
 
     def hash
       self.to_h.hash
