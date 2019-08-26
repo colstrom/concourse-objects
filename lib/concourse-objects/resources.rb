@@ -54,6 +54,7 @@ require_relative "resources/rss"
 require_relative "resources/rubygems"
 require_relative "resources/serverspec"
 require_relative "resources/slack-notification"
+require_relative "resources/swift"
 
 module ConcourseObjects
   module Resources
