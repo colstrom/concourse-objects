@@ -82,6 +82,12 @@ module ConcourseObjects
       end
     end
 
+    def self.licensed_resources
+      resources.select do |resource|
+        resource.const_defined?(:RESOURCE_LICENSE)
+      end
+    end
+
     def self.find(name)
       named_resources.find do |resource|
         name === resource.const_get(:RESOURCE_NAME)
@@ -92,6 +98,20 @@ module ConcourseObjects
       named_resources.select do |resource|
         name === resource.const_get(:RESOURCE_NAME)
       end
+    end
+
+    def self.licensed(license)
+      licensed_resources.select do |resource|
+        license === resource.const_get(:RESOURCE_LICENSE)
+      end
+    end
+
+    def self.licenses
+      resources.group_by do |resource|
+        resource.const_get(:RESOURCE_LICENSE) if resource.const_defined?(:RESOURCE_LICENSE)
+      end.sort_by do |key, value|
+        value.count
+      end.reverse.to_h
     end
 
     def self.owners
