@@ -57,6 +57,7 @@ require_relative "resources/rss"
 require_relative "resources/rubygems"
 require_relative "resources/serverspec"
 require_relative "resources/slack-notification"
+require_relative "resources/sonarqube"
 require_relative "resources/swift"
 require_relative "resources/telegram"
 
